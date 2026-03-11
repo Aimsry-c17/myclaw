@@ -1,0 +1,14 @@
+# 依赖
+node_modules
+# TypeScript 编译产物
+dist/
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志
+logs/
+*.log
+
