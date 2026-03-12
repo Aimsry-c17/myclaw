@@ -1,7 +1,5 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-import path from "path";
 import chatRouter from "./routes/chat";
 import tasksRouter from "./routes/tasks";
 import taskRouter from "./routes/task";
@@ -10,10 +8,6 @@ import projectsRouter from "./routes/projects";
 import modelsRouter from "./routes/models";
 import configRouter from "./routes/config";
 import copilotRouter from "./routes/copilotkit";
-
-// 加载环境变量（从项目根目录的 .env.local）
-dotenv.config({ path: path.resolve(__dirname, "../../.env.local") });
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const app = express();
 const PORT = parseInt(process.env.PORT || "3001");
